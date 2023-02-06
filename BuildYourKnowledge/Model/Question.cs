@@ -10,8 +10,8 @@
         public int _Id { get; set; }
         public string _Question { get; set; }
 
-        public string[] Choices { get; set; }
+        public string[] _Choices { get; set; }
 
-        public string[] Answers { get; set; }
+        public string[] _Answers { get; set; }
     }
 }
