@@ -1,3 +1,5 @@
+using BuildYourKnowledge.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -13,6 +15,7 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
@@ -22,4 +25,6 @@ app.UseAuthorization();
 
 app.MapRazorPages();
 
+new ResultAPI().TestAPI();
 app.Run();
+

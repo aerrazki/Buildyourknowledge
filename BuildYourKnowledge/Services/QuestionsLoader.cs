@@ -4,6 +4,7 @@ namespace BuildYourKnowledge.Services
 {
     public abstract class QuestionsLoader
     {
-        public abstract List<Question> GetQuestions();
+        public abstract IList<Question> GetQuestions();
+        public abstract Question GetQuestion(int id);
     }
 }
